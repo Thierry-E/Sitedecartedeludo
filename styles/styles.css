@@ -1,0 +1,92 @@
+/*Ajout des fonts personnalisés
+Merriweather", serif
+Montserrat", sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/*variables*/
+:root {
+  --font_title: 'Montserrat', sans-serif;
+  --font_text: 'Merriweather', serif;
+  --black: #000;
+  --white: #fff;
+  --blue_dark: #0065fc;
+  --blue_light: #deebff;
+}
+
+/*Code général*/
+body {
+  font-family: var(--font_text);
+}
+
+/*Header*/
+header {
+  width: 100%;
+  height: 100px;
+  background: var(--blue_dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  border: 2px solid red;
+}
+
+#logo {
+  width: 80px;
+}
+
+.user_actions {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.user_actions i {
+  width: 40px;
+  height: 40px;
+  background: var(--white);
+  padding: 10px;
+  border-radius: 100%;
+  color: var(--black);
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user_actions i:hover {
+  transform: scale(1.2);
+}
+
+#searchForm {
+  width: 250px;
+  height: 50px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#searchForm.show {
+  display: flex;
+}
+
+.searchBar {
+  width: 220px;
+  border: none;
+  padding: 12px;
+  border-radius: 50px;
+}
+
+::placeholder {
+  font-size: 1.1em;
+  font-weight: bold;
+}
