@@ -16,6 +16,7 @@ Montserrat", sans-serif;*/
 :root {
   --font_title: 'Montserrat', sans-serif;
   --font_text: 'Merriweather', serif;
+  --shadow_container: 0 0 2px 1px rgba(0, 0, 0, 0.3);
   --black: #000;
   --white: #fff;
   --blue_dark: #0065fc;
@@ -30,6 +31,7 @@ body {
 main {
   width: 100%;
   display: flex;
+  margin-bottom: 30px;
 }
 
 /*Header*/
@@ -100,7 +102,7 @@ header {
   width: 100%;
   height: 280px;
   background: url('../image/Ban.jpg');
-  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow_container);
 }
 
 .banner h1 {
@@ -125,8 +127,7 @@ header {
 /*Navigation*/
 nav {
   width: 15%;
-  height: 1000px;
-  margin: 10px 0;
+  margin: auto 0;
 }
 
 nav a {
@@ -153,4 +154,20 @@ nav a img {
   background: var(--blue_dark);
   margin: 3px auto;
   border-radius: 5px;
+}
+
+/*Footer*/
+footer {
+  width: 100%;
+  height: 200px;
+  background: var(--blue_light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--shadow_container);
+}
+
+footer p {
+  font-size: 1.1em;
+  font-weight: 550;
 }
