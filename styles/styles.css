@@ -19,8 +19,9 @@ Montserrat", sans-serif;*/
   --shadow_container: 0 0 2px 1px rgba(0, 0, 0, 0.3);
   --black: #000;
   --white: #fff;
-  --blue_dark: #0065fc;
+  --blue_dark: #21a2f5;
   --blue_light: #deebff;
+  --red: #d61e33;
 }
 
 /*Code général*/
@@ -107,7 +108,7 @@ header {
   width: 100%;
   height: 280px;
   background: url('../image/Ban.jpg');
-  box-shadow: var(--shadow_container);
+  /* box-shadow: var(--shadow_container); */
 }
 
 .banner h1 {
@@ -132,7 +133,9 @@ header {
 /*Navigation*/
 nav {
   width: 15%;
-  margin: auto 0;
+  margin: 20px auto 0 auto;
+  border-radius: 15px;
+  background: linear-gradient(to top, #4481eb 0%, #04befe 100%);
 }
 
 nav a {
@@ -144,6 +147,16 @@ nav a {
   color: var(--black);
   font-size: 1.5em;
   padding: 10px;
+}
+
+.navSupport {
+  font-weight: bold;
+  width: 92%;
+  height: 130px;
+  color: var(--red);
+  background-color: #c3c2c2;
+  border-radius: 15px;
+  margin: 10px;
 }
 
 nav a img {
@@ -263,12 +276,13 @@ nav a img {
 /*Footer*/
 footer {
   width: 100%;
-  height: 200px;
-  background-color: var(--blue_light);
+  height: 150px;
+  background-color: var(--blue_dark);
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: var(--shadow_container);
+  margin-top: 20px;
 }
 
 footer p {
