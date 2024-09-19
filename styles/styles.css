@@ -1,7 +1,8 @@
 /*Ajout des fonts personnalisés
 Merriweather", serif
 Montserrat", sans-serif;*/
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Shrikhand&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Permanent+Marker&display=swap');
 
 /*Reset*/
 * {
@@ -14,7 +15,7 @@ Montserrat", sans-serif;*/
 
 /*variables*/
 :root {
-  --font_title: 'Montserrat', sans-serif;
+  --font_title: 'Permanent Marker', cursive;
   --font_text: 'Merriweather', serif;
   --shadow_container: 0 0 2px 1px rgba(0, 0, 0, 0.3);
   --black: #000;
@@ -49,6 +50,13 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 30px;
+}
+
+header h1 {
+  font-family: var(--font_title);
+  font-size: 2.2em;
+  font-weight: 500;
+  margin-left: 800px;
 }
 
 #logo {
@@ -109,17 +117,7 @@ header {
   height: 280px;
   background: url('../image/Ban.jpg');
   /* box-shadow: var(--shadow_container); */
-}
-
-.banner h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: var(--font_title);
-  font-size: 3em;
-  font-weight: 700;
-  margin-bottom: 50px;
-  padding-top: 60px;
+  /* box-shadow: 0px 0px 15px -4px #000000; */
 }
 
 .banner p {
