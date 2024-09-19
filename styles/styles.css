@@ -20,8 +20,8 @@ Montserrat", sans-serif;*/
   --shadow_container: 0 0 2px 1px rgba(0, 0, 0, 0.3);
   --black: #000;
   --white: #fff;
-  --blue_dark: #21a2f5;
-  --blue_light: #deebff;
+  --blue_dark: #0c4da2;
+  --blue_light: #c5d4eb;
   --red: #d61e33;
 }
 
@@ -57,6 +57,7 @@ header h1 {
   font-size: 2.2em;
   font-weight: 500;
   margin-left: 800px;
+  color: var(--white);
 }
 
 #logo {
@@ -133,7 +134,7 @@ nav {
   width: 15%;
   margin: 20px auto 0 auto;
   border-radius: 15px;
-  background: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  background: var(--blue_dark);
 }
 
 nav a {
@@ -167,7 +168,7 @@ nav a img {
 .navSeparate {
   width: 90%;
   height: 5px;
-  background: var(--blue_dark);
+  background: var(--white);
   margin: 3px auto;
   border-radius: 5px;
 }
@@ -204,7 +205,11 @@ nav a img {
   width: 25%;
   height: 250px;
   margin: 20px;
-  background: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  background: linear-gradient(
+    to top,
+    var(--blue_dark) 0%,
+    var(--blue_light) 100%
+  );
   border-radius: 15px;
   box-shadow: 0px 0px 15px -4px #000000;
 }
@@ -239,7 +244,11 @@ nav a img {
   width: 80%;
   height: 155px;
   margin: 20px;
-  background: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  background: linear-gradient(
+    to top,
+    var(--blue_dark) 0%,
+    var(--blue_light) 100%
+  );
   border-radius: 15px;
   box-shadow: 0px 0px 15px -4px #000000;
   display: flex;
@@ -284,6 +293,7 @@ footer {
 }
 
 footer p {
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 550;
+  color: var(--white);
 }
