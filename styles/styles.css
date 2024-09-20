@@ -286,7 +286,7 @@ footer {
   height: 150px;
   background-color: var(--blue_dark);
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   box-shadow: var(--shadow_container);
   margin-top: 20px;
@@ -295,7 +295,7 @@ footer {
 .assistance,
 .legalNotices,
 .socialNetworks {
-  width: 33%;
+  width: 22%;
   height: 125px;
   display: flex;
   align-items: center;
