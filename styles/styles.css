@@ -292,8 +292,54 @@ footer {
   margin-top: 20px;
 }
 
-footer p {
-  font-size: 1.2em;
-  font-weight: 550;
+.assistance,
+.legalNotices,
+.socialNetworks {
+  width: 33%;
+  height: 125px;
+  display: flex;
+  align-items: center;
+}
+
+.assistance,
+.legalNotices {
+  display: flex;
+  justify-content: center;
+}
+
+.socialNetworks {
+  display: flex;
+  flex-direction: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.assistance a,
+.legalNotices span,
+.socialNetworks a {
   color: var(--white);
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.assistance a:hover,
+.socialNetworks a:hover {
+  color: var(--red);
+}
+
+.iconeText {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.assistance i {
+  padding-right: 15px;
+}
+
+.assistance i,
+.socialNetworks i {
+  font-size: 1.5em;
 }
