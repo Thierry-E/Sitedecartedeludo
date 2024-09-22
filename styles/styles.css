@@ -132,6 +132,7 @@ header h1 {
 /*Navigation*/
 nav {
   width: 15%;
+  height: 1480px;
   margin: 20px auto 0 auto;
   border-radius: 15px;
   background: var(--blue_dark);
@@ -145,6 +146,7 @@ nav a {
   align-items: center;
   color: var(--black);
   font-size: 1.5em;
+  margin: 5px 0;
   padding: 10px;
 }
 
@@ -435,11 +437,12 @@ footer {
   font-size: 1em;
   display: flex;
   align-items: center;
+  transition: transform 0.4s ease-in-out;
 }
 
 .assistance a:hover,
 .socialNetworks a:hover {
-  color: var(--red);
+  transform: scale(1.2);
 }
 
 .iconeText {
