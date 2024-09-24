@@ -146,9 +146,9 @@ header h1 {
 .banner p {
   width: 100%;
   padding: 20px;
-  font-size: 1.6em;
+  font-size: 1.5em;
   font-weight: 700;
-  color: var(--blue_dark);
+  color: var(--black);
   text-align: center;
   background: rgba(255, 255, 255, 0.6);
 }
